@@ -5,15 +5,17 @@ const api ={
 }
 function App() {
   return (
-   <div>
-   <div className="search-box">
+   <div className="app-warm">
+     <main>
+       <div className="search-box">
     <input
     type = "text"
-    className="Search-bar"
+    className="search-bar"
     placeholder="City Name...."
     
     />
-   </div>
+   </div></main>
+   
    </div>
   );
 }
