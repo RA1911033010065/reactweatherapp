@@ -14,9 +14,9 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
+
     return `${day} ${date} ${month} ${year}`
   }
-
   return (
    <div className="app-warm">
      <main>
@@ -27,8 +27,21 @@ function App() {
     placeholder="City Name...."
     
     />
-   </div></main>
-   
+   </div>
+   <div className="location-box">
+     <div className="location">New York,US</div>
+     <div className="date">{dateBuilder(new Date())}</div>
+    </div>
+    <div className="weather-box">
+    
+      <div className="temp">
+        15° C
+      </div>
+      <div className="weather">
+        Sunny
+      </div>
+    </div>
+      </main>
    </div>
   );
 }
